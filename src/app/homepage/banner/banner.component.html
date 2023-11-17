@@ -1,0 +1,68 @@
+<div class="banner">
+    <img src="assets\images\banner.jpg" alt="banner" class="banner-img">
+    <div class="banner-content">
+        <h1 class="banner-title">Your best deals to Vietnam and beyond!</h1>
+        <h2 class="banner-subtitile">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+    </div>
+
+
+
+
+    <div class="banner-actionstype">
+        <button mat-raise-button class="actionstype-rt">ROUND TRIP</button>
+        <button mat-raise-button class="actionstype-ow">ONE WAY</button>
+        <button mat-raise-button class="actionstype-mc" style="margin-left: 10px;">MULTI_CITY</button>
+    </div>
+    <div class="banner-actions">
+        <button id="departFromButton" mat-raise-button (click)="toggleDropdown()" style="border-radius: 12px 0px 0px 12px;">
+                <img src="assets\images\icons\airplane-outline.png" alt="">
+                Depart from
+            </button>
+
+        <button mat-raise-button>
+                <img src="assets\images\icons\airplane-outline.png" alt="">
+                Arrive at
+            </button>
+
+        <button mat-raise-button>
+                <img src="assets\images\icons\calendar-outline.svg" alt="">
+                Departure Date
+            </button>
+
+        <button mat-raise-button>
+                <img src="assets\images\icons\calendar-outline.svg" alt="">
+                Return Date
+            </button>
+        <button mat-raise-button>
+                <img src="assets\images\icons\person-add-outline.svg" alt="">
+                Passengers
+            </button>
+
+        <button mat-raise-button>
+                <img src="assets\images\icons\bag-check-outline.png" alt="">
+                Cabin Class
+            </button>
+        <button mat-raise-button style="border-radius: 0px 12px 12px 0px;background: var(--Secondary, #BB1113);color: #FFF; display: flex; justify-content: center;">
+                Search
+            </button>
+    </div>
+</div>
+
+
+<!-- <div class="dropdown-content" *ngIf="isDropdownVisible">
+    
+    <select [(ngModel)]="selectedLocation" placeholder="chon dia diem">
+            <option *ngFor="let location of departureLocations" [value]="location.iata_code">{{location.name}} - {{location.city}}-{{location.country}}</option>
+        </select>
+    <input type="text" placeholder="Enter location" [(ngModel)]="selectedLocation">
+    <button mat-raise-button (click)="submitLocation()">Submit</button>
+</div> -->
+<!-- <div class="dropdown-content" *ngIf="isDropdownVisible">
+    <input type="text" placeholder="Enter location" [(ngModel)]="selectedLocation" (input)="onInputChange($event)">
+    <div *ngIf="filteredLocations.length > 0">
+        <button mat-raise-button *ngFor="let location of filteredLocations" (click)="selectLocation(location)">
+        {{ location.name }} - {{ location.city }}, {{ location.country }}
+      </button>
+    </div>
+    <button mat-raise-button (click)="submitLocation()">Submit</button>
+</div> -->

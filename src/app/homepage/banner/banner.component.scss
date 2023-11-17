@@ -1,0 +1,173 @@
+/* CSS cho banner */
+
+.banner {
+    position: relative;
+    height: 262px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    /* Set the max-width to 913px */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    /* Adjust padding as needed */
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    //background-blend-mode: normal, multiply, normal;
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-100, #FFF);
+    text-align: center;
+    text-shadow: 0px 1px 20px rgba(0, 0, 0, 3);
+}
+
+.banner-title {
+    width: 737px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    width: 737px;
+}
+
+.banner-subtitle {
+    width: 413px;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+///css action 
+.banner-actions {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    /* Các nút sẽ được căn cách đều */
+    width: 100%;
+    /* Đảm bảo chiều rộng của banner-actions là 100% */
+    height: 48px;
+    max-width: 880px;
+}
+
+.banner-actions button {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    /* Không có khoảng trắng ở bên phải */
+    width: 133px;
+    /* Chiều rộng của mỗi button*/
+    background-color: #FFF;
+    font-size: 12px;
+    border: none;
+    box-shadow: 1px 0px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner-actions button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+.banner-actions button:last-child {
+    width: 94px;
+    /* Chiều rộng của nút search */
+}
+
+//   /* CSS cho thanh ngang */
+//   .divider {
+//     height: 2px;
+//     background-color: #142D53;
+//     margin: 20px 0;
+//   }
+.banner-actionstype {
+    position: absolute;
+    bottom: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    //width: 100%;
+    // height: auto;
+    // max-width: auto;
+    flex-direction: row;
+}
+
+.banner-actionstype button {
+    //display: flex;
+    align-items: center;
+    width: 136px;
+    /* Chiều rộng của mỗi button*/
+    height: 48px;
+    font-size: 12px;
+    border: none;
+}
+
+.actionstype-rt {
+    padding: 10px 20px;
+    //gap: 10px;
+    color: #FFF;
+    border-radius: 12px 12px 0px 0px;
+    background: var(--Primary, #193080);
+    box-shadow: 1px 0px 9px 0px rgba(0, 0, 0, 0.25);
+    margin-right: -20px;
+    z-index: 2;
+}
+
+.actionstype-ow {
+    padding: 15px 16px 15px 20px;
+    border-radius: 0px 12px 0px 0px;
+    background: #E3ECFA;
+    box-shadow: 1px 0px 9px 0px rgba(0, 0, 0, 0.25);
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.actionstype-mc {
+    padding: 15px 16px 15px 22px;
+    border-radius: 0px 12px 0px 0px;
+    background: #E3ECFA;
+    box-shadow: 1px 0px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+//////form components
+.dropdown-content {
+    //display: none;
+    //position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content input {
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-content button {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
